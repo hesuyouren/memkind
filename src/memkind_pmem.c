@@ -193,7 +193,7 @@ int memkind_pmem_create_tmpfile(const char *dir, int *fd)
         goto exit;
     }
 
-    (void)unlink(fullname);
+//     (void)unlink(fullname);
     (void)sigprocmask(SIG_SETMASK, &oldset, NULL);
 
     return err;
